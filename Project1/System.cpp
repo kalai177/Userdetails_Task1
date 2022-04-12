@@ -11,6 +11,7 @@ void System::addusers() {
 	 std::string district;
 
 	std::cout << "Enter name:";
+	std::cin >> std::ws;
 	scanf_s("%[^\n]s", temp_name,256);
 	int size_name = strlen(temp_name);
 	char* name = new char[size_name + 1];
@@ -23,6 +24,7 @@ void System::addusers() {
 	std::cin >> age;
 
 	std::cout << "Enter mailid:";
+	std::cin >> std::ws;
 	scanf_s("%[^\n]s", temp_mail, 500);
 	int size_mail = strlen(temp_mail);
 	char* mail = new char[size_mail + 1];
