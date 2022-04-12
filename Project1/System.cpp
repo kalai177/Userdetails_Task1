@@ -11,7 +11,7 @@ void System::addusers() {
 	 std::string district;
 
 	std::cout << "Enter name:";
-	scanf_s("%s", temp_name,256);
+	scanf_s("%[^\n]s", temp_name,256);
 	int size_name = strlen(temp_name);
 	char* name = new char[size_name + 1];
 	strcpy_s(name, size_name + 1, temp_name);
@@ -23,7 +23,7 @@ void System::addusers() {
 	std::cin >> age;
 
 	std::cout << "Enter mailid:";
-	scanf_s("%s", temp_mail, 500);
+	scanf_s("%[^\n]s", temp_mail, 500);
 	int size_mail = strlen(temp_mail);
 	char* mail = new char[size_mail + 1];
 	strcpy_s(mail, size_mail + 1, temp_mail);
@@ -63,9 +63,6 @@ void System::showusers() {
 }
 
 void System::deleteusers() {
-
-	
-	
 
 	std::cout << "Enter the user id to delete user: ";
 	DWORD delete_user_id;
