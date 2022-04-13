@@ -8,9 +8,9 @@ private:
 	static DWORD uid;
 public:
 	DWORD id;
-	const char* name;
+	LPCSTR name;
 	DWORD age;
-	const char* mail;
+	LPCSTR mail;
 	DWORD phone_number;
 	std::string district;
 
